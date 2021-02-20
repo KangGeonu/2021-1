@@ -1,2 +1,19 @@
 # MVC2 모델 게시판 만들기
 
+#데이터베이스
+
+CREATE TABLE MEMBERS(
+	id VARCHAR(30) PRIMARY KEY,
+    pw VARCHAR(30) NOT NULL,
+    name VARCHAR(30) NOT NULL,
+    email VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE BOARD(
+	num INT(30) NOT NULL,
+    title VARCHAR(50) NOT NULL,
+    name VARCHAR(30) NOT NULL,
+    time TIMESTAMP NOT NULL,
+    text VARCHAR(3000) NOT NULL
+);
+
